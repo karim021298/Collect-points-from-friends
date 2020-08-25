@@ -1,0 +1,60 @@
+.txt {
+	text-shadow: 3px 3px 4px #5C1F7A;
+}
+.lbl {
+	text-shadow: 2px 2px 3px #5C1F7A;
+}
+
+.button {
+  position: relative;
+  background-color: #8A46D0;
+  border: none;
+  font-size: 28px;
+  color: #DFD1ED;
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+  margin: 25px;
+}
+
+.button:after {
+  content: "";
+  background: #9826C1;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px!important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+  height: 250px;
+}
+.labels {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35px;
+}
+.eachlbl{
+	margin-right: 145px;
+	margin-left: 145px;
+}
+
+
